@@ -1,6 +1,5 @@
-﻿string[] lines;
-List<long> elfCalories = new List<long>();
-lines = System.IO.File.ReadAllLines(@"./input-test.txt");
+﻿List<long> elfCalories = new List<long>();
+var lines = System.IO.File.ReadAllLines(@"./input-test.txt");
 
 int currentElf = 0;
 foreach (var line in lines)
