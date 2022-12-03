@@ -1,4 +1,6 @@
-﻿int GetPrioritySum(IEnumerable<IEnumerable<char>> input) =>
+﻿var lines = File.ReadAllLines(@"./input-test.txt");
+
+int PrioritySum(IEnumerable<IEnumerable<char>> input) =>
     input
         .First()
         .Where(c => input.All(line => line.Contains(c)))
@@ -6,18 +8,16 @@
         .First();
 
 int CharValue(char c) =>
-    c < 'a' ? c - 'A' + 27 : c - 'a' + 1;
-
-var lines = File.ReadAllLines(@"./input-test.txt");
+    c < 97 ? c - 65 + 27 : c - 97 + 1;
 
 var a = lines
     .Select(line => line.Chunk(line.Length / 2))
-    .Select(GetPrioritySum)
+    .Select(PrioritySum)
     .Sum();
 
 var b = lines
     .Chunk(3)
-    .Select(GetPrioritySum)
+    .Select(PrioritySum)
     .Sum();
 
 Console.WriteLine($"A: {a}");
