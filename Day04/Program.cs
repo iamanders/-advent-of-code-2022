@@ -11,8 +11,7 @@ var data = lines
             y1 = int.Parse(matches[1].Value),
             x2 = int.Parse(matches[2].Value),
             y2 = int.Parse(matches[3].Value),
-        })
-    .ToList();
+        });
 
 var part1 = data.Count(n => (n.x1 <= n.x2 && n.y1 >= n.y2) || (n.x2 <= n.x1 && n.y2 >= n.y1));
 var part2 = data.Count(n => n.x1 <= n.y2 && n.y1 >= n.x2);
