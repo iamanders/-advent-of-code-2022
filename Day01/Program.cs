@@ -19,5 +19,5 @@ foreach (var line in lines)
 var topElfCalories = elfCalories.Max();
 var topThreeElfCalories = elfCalories.OrderByDescending(x => x).Take(3).Sum();
 
-Console.WriteLine($"Top calories is: {topElfCalories}");
-Console.WriteLine($"Top three elf calories sum: {topThreeElfCalories}");
+Console.WriteLine($"Part 1: {topElfCalories}");
+Console.WriteLine($"Part 2: {topThreeElfCalories}");

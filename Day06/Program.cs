@@ -11,5 +11,5 @@ int? FindMarker(int markerSize)
     return null;
 }
 
-Console.WriteLine($"A: {FindMarker(4)}");
-Console.WriteLine($"B: {FindMarker(14)}");
+Console.WriteLine($"Part 1: {FindMarker(4)}");
+Console.WriteLine($"Part 2: {FindMarker(14)}");

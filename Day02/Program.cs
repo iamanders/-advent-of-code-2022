@@ -18,5 +18,5 @@ var scores = new Dictionary<string, (short scoreA, short scoreB)>
 long scoreA = lines.Sum(x => scores.First(y => y.Key == x).Value.scoreA);
 long scoreB = lines.Sum(x => scores.First(y => y.Key == x).Value.scoreB);
 
-Console.WriteLine($"A: {scoreA}");
-Console.WriteLine($"B: {scoreB}");
+Console.WriteLine($"Part 1: {scoreA}");
+Console.WriteLine($"Part 2: {scoreB}");

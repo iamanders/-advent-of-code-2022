@@ -20,5 +20,5 @@ var b = lines
     .Select(PrioritySum)
     .Sum();
 
-Console.WriteLine($"A: {a}");
-Console.WriteLine($"B: {b}");
+Console.WriteLine($"Part 1: {a}");
+Console.WriteLine($"Part 2: {b}");
